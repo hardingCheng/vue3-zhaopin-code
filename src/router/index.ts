@@ -15,19 +15,19 @@ const routes: Array<RouteRecordRaw> = [
 	},
 	{
 		path: '/task',
-		component: () => import('@/views/task/index.vue'),
+		component: () => import('@/views/my/task/index.vue'),
 	},
 	{
 		path: '/task/search',
-		component: () => import('@/views/task/search.vue'),
+		component: () => import('@/views/my/task/search.vue'),
 	},
 	{
 		path: '/task/details/:id',
-		component: () => import('@/views/task/details.vue'),
+		component: () => import('@/views/my/task/details.vue'),
 	},
 	{
 		path: '/task/companySource/:id',
-		component: () => import('@/views/task/companySource.vue'),
+		component: () => import('@/views/my/task/companySource.vue'),
 	},
 	{
 		path: '/contract',
@@ -58,10 +58,6 @@ const routes: Array<RouteRecordRaw> = [
 		component: () => import('@/views/message/talk.vue'),
 	},
 	{
-		path: '/message/talent/:resumeId/:userId',
-		component: () => import('@/views/message/talent.vue'),
-	},
-	{
 		path: '/my',
 		component: () => import('@/views/my/index.vue'),
 	},
@@ -76,14 +72,6 @@ const routes: Array<RouteRecordRaw> = [
 	{
 		path: '/my/user/certified',
 		component: () => import('@/views/my/user/certified.vue'),
-	},
-	{
-		path: '/my/company/authReal',
-		component: () => import('@/views/my/company/authReal.vue'),
-	},
-	{
-		path: '/my/company/certified',
-		component: () => import('@/views/my/company/certified.vue'),
 	},
 	{
 		path: '/my/user/identitySwitch',
@@ -122,56 +110,16 @@ const routes: Array<RouteRecordRaw> = [
 		component: () => import('@/views/my/resume/preview.vue'),
 	},
 	{
-		path: '/my/contract/:id',
-		component: () => import('@/views/my/contract/index.vue'),
-	},
-	{
-		path: '/my/contract/add',
-		component: () => import('@/views/my/contract/add.vue'),
-	},
-	{
 		path: '/my/collect',
 		component: () => import('@/views/my/collect/index.vue'),
-	},
-	{
-		path: '/my/collect/talent',
-		component: () => import('@/views/my/collect/talent.vue'),
-	},
-	{
-		path: '/my/about',
-		component: () => import('@/views/my/about/index.vue'),
-	},
-	{
-		path: '/my/partner/person',
-		component: () => import('@/views/my/partner/person.vue'),
-	},
-	{
-		path: '/my/partner/company',
-		component: () => import('@/views/my/partner/company.vue'),
-	},
-	{
-		path: '/my/partner/admin',
-		component: () => import('@/views/my/partner/admin.vue'),
 	},
 	{
 		path: '/my/task',
 		component: () => import('@/views/my/task/index.vue'),
 	},
 	{
-		path: '/my/task/add',
-		component: () => import('@/views/my/task/add.vue'),
-	},
-	{
 		path: '/my/task/details/:id',
 		component: () => import('@/views/my/task/details.vue'),
-	},
-	{
-		path: '/my/coupon',
-		component: () => import('@/views/my/coupon/index.vue'),
-	},
-	{
-		path: '/my/coupon/rule',
-		component: () => import('@/views/my/coupon/rule.vue'),
 	},
 	{
 		path: '/talent',
@@ -184,38 +132,6 @@ const routes: Array<RouteRecordRaw> = [
 	{
 		path: '/talent/details/:id',
 		component: () => import('@/views/talent/details.vue'),
-	},
-	{
-		path: '/admin/home',
-		component: () => import('@/views/admin/home/index.vue'),
-	},
-	{
-		path: '/admin/home/contract',
-		component: () => import('@/views/admin/home/contract/index.vue'),
-	},
-	{
-		path: '/admin/home/pay',
-		component: () => import('@/views/admin/home/pay/index.vue'),
-	},
-	{
-		path: '/admin/home/auditor',
-		component: () => import('@/views/admin/home/auditor/index.vue'),
-	},
-	{
-		path: '/admin/home/auditor/task/:id',
-		component: () => import('@/views/admin/home/auditor/taskDetail.vue'),
-	},
-	{
-		path: '/admin/home/auditor/talent/:id',
-		component: () => import('@/views/admin/home/auditor/talentDetail.vue'),
-	},
-	{
-		path: '/admin/home/auditor/company/:id',
-		component: () => import('@/views/admin/home/auditor/companyDetail.vue'),
-	},
-	{
-		path: '/admin/home/user',
-		component: () => import('@/views/admin/home/user/index.vue'),
 	},
 ];
 const router = createRouter({

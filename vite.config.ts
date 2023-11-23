@@ -7,7 +7,7 @@ export default defineConfig({
 	plugins: [vue(), eslintPlugin()],
 	resolve: {
 		alias: {
-			'@': path.resolve(__dirname, './src'),
+			'@': path.resolve(__dirname, 'src'),
 		},
 	},
 });

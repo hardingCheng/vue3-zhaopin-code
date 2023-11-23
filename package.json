@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.6.1",
-    "path": "^0.12.7",
     "pinia": "^2.1.7",
     "vant": "^4.8.0",
     "vue": "^3.3.8",
@@ -24,6 +23,7 @@
     "@babel/eslint-parser": "^7.23.3",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@types/node": "^20.9.4",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "@vitejs/plugin-vue": "^4.5.0",

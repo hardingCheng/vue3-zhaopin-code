@@ -27,5 +27,8 @@ module.exports = {
     ],
     globals: {},
     // 这里时配置规则的,自己看情况配置
-    rules: {},
+    rules: {
+        // 关闭名称校验
+        'vue/multi-word-component-names': "off"
+    },
 }

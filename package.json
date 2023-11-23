@@ -11,13 +11,10 @@
     "commit": "git add . && git-cz",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "*.{ts,js,jsx,tsx,vue}": [
-      "npm run lint",
-      "mpm run prettier"
-    ]
-  },
   "dependencies": {
+    "@vueuse/core": "^10.6.1",
+    "pinia": "^2.1.7",
+    "vant": "^4.8.0",
     "vue": "^3.3.8"
   },
   "devDependencies": {
@@ -48,5 +45,11 @@
     "commitizen": {
       "path": "./node_modules/cz-customizable"
     }
+  },
+  "lint-staged": {
+    "*.{ts,js,jsx,tsx,vue}": [
+      "npm run lint",
+      "npm run prettier"
+    ]
   }
 }

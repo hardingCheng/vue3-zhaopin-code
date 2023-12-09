@@ -15,19 +15,19 @@ const routes: Array<RouteRecordRaw> = [
 	},
 	{
 		path: '/task',
-		component: () => import('@/views/my/task/index.vue'),
+		component: () => import('@/views/task/index.vue'),
 	},
 	{
 		path: '/task/search',
-		component: () => import('@/views/my/task/search.vue'),
+		component: () => import('@/views/task/search.vue'),
 	},
 	{
 		path: '/task/details/:id',
-		component: () => import('@/views/my/task/details.vue'),
+		component: () => import('@/views/task/details.vue'),
 	},
 	{
 		path: '/task/companySource/:id',
-		component: () => import('@/views/my/task/companySource.vue'),
+		component: () => import('@/views/task/companySource.vue'),
 	},
 	{
 		path: '/contract',

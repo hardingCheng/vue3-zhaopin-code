@@ -21,10 +21,11 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./",  // 这里需要配置
     "paths": {
-      "@":  ["./src"],
-      "@/*": ["./src/*"]
+      "@": ["src"],
+      "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src", "src/typings/*.d.ts","src/*.d.ts"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
